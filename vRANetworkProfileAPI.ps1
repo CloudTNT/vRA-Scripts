@@ -1,5 +1,17 @@
 
 
+#Function Invoke-RestMethod
+fucntion restCall ($URI, $Header, $body) {
+	$parm = @{
+		Method 	= Post;
+		Uri 	= $URI;
+		Headers	= $header;
+		Body	= $body;
+	}
+	Invoke-RestMethod @parm
+}
+
+
 
 #Function to get Password
 function getTenantInfo ($msg) {
@@ -34,7 +46,7 @@ $body = @{
 
 $URI = "https://$vRAServer/identity/api/tokens"
 
-$token = Invoke-RestMethod -Method Post -Uri $URI -Headers $header -Body (ConvertTo-Json $body)
+$token = restCall -Uri $URI -Headers $header -Body (ConvertTo-Json $body)
 
 $header.Add("Authorization", "Bearer " + $token.id)
 
@@ -60,7 +72,7 @@ $body = @"
 }
 "@
 
-$networkprofile = "https://vra-01.lab.local/iaas-proxy-provider/api/network/profiles"
+$networkprofile = "https://$vRAServer/iaas-proxy-provider/api/network/profiles"
 
-Invoke-RestMethod -Method Post -Uri $networkprofile -Headers $header -Body $body
+restCall -Uri $networkprofile -Headers $header -Body $body
 
