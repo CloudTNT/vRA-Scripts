@@ -1,17 +1,14 @@
 
-
 #Function Invoke-RestMethod
-fucntion restCall ($URI, $Header, $body) {
-	$parm = @{
-		Method 	= Post;
+function restCall ($URI, $Header, $body) {
+	$param = @{
+		Method 	= "Post";
 		Uri 	= $URI;
 		Headers	= $header;
 		Body	= $body;
 	}
-	Invoke-RestMethod @parm
+	Invoke-RestMethod @param
 }
-
-
 
 #Function to get Password
 function getTenantInfo ($msg) {
@@ -27,10 +24,10 @@ function popupBox ($msg, $num) {
 }
 
 #import xcel data
-$vRAConfig_IPAMNWProfiles	= import-excel "c:\draft\IPAMNWProfiles.xlsx"
+#$vRAConfig_IPAMNWProfiles	= import-excel "c:\draft\IPAMNWProfiles.xlsx"
 
 #Get vRA Server, Tenant, User, and Password
-$vRAServer 		= getTenantInfo -msg 'Please enter your vRA server: i.e. vra-01.lab.local'
+$vRAServer          = getTenantInfo -msg 'Please enter your vRA server: i.e. vra-01.lab.local'
 $vRATenant			= getTenantInfo -msg 'Please enter the Tenant name: i.e. lab'
 $vRAUser 			= getTenantInfo -msg 'Please enter the FQDN of the user: i.e. vraadmin@lab.local'
 $TextPassword 		= getTenantInfo -msg 'Please enter in the Password you want to use for the local User Tenant account:'
@@ -45,8 +42,8 @@ $body = @{
 }
 
 $URI = "https://$vRAServer/identity/api/tokens"
-
-$token = restCall -Uri $URI -Headers $header -Body (ConvertTo-Json $body)
+ 
+$token = restCall -URI $URI -Header $header -body (ConvertTo-Json $body)
 
 $header.Add("Authorization", "Bearer " + $token.id)
 
@@ -56,8 +53,8 @@ $body = @"
  "profileType" : "EXTERNAL",
  "id" : null,
  "@type" : "ExternalNetworkProfile",
- "name" : "$networkname",
- "IPAMEndpointId" : "$IPAMEndpointId",
+ "name" : "Splatting Network Profile",
+ "IPAMEndpointId" : "c37c7634-5a76-4b31-b76d-ab1452ef82db",
  "addressSpaceExternalId" : "default",
  "description" : "Created by Postman",
  "definedRanges" : [{
@@ -74,5 +71,5 @@ $body = @"
 
 $networkprofile = "https://$vRAServer/iaas-proxy-provider/api/network/profiles"
 
-restCall -Uri $networkprofile -Headers $header -Body $body
+restCall -Uri $networkprofile -Header $header -Body $body
 
