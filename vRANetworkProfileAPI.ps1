@@ -22,17 +22,17 @@ $vRAServer 		= getTenantInfo -msg 'Please enter your vRA server: i.e. vra-01.lab
 $vRATenant			= getTenantInfo -msg 'Please enter the Tenant name: i.e. lab'
 $vRAUser 			= getTenantInfo -msg 'Please enter the FQDN of the user: i.e. vraadmin@lab.local'
 $TextPassword 		= getTenantInfo -msg 'Please enter in the Password you want to use for the local User Tenant account:'
-$SecurePassword 	= ConvertTo-SecureString -String $TextPassword -AsPlainText -Force
+#$SecurePassword 	= ConvertTo-SecureString -String $TextPassword -AsPlainText -Force
 
 $header = @{ "Accept" = "application/json"; "Content-Type" = "application/json"  }
 
 $body = @{
-    username = "$vRAServer";
+    username = "$vRAUser";
     password = "$TextPassword";
     tenant   = "$vRATenant"
 }
 
-$URI = "https://vra-01.lab.local/identity/api/tokens"
+$URI = "https://$vRAServer/identity/api/tokens"
 
 $token = Invoke-RestMethod -Method Post -Uri $URI -Headers $header -Body (ConvertTo-Json $body)
 
