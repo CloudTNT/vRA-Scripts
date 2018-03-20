@@ -1,0 +1,36 @@
+theName,theBusinessGroup,theComputeResource,thePlatformType,theNetworkPath,theNetworkProfile,theDataStorePath
+ReservationBG001,BG01,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG002,BG02,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG003,BG03,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG004,BG04,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG005,BG05,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG006,BG01,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG007,BG02,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG008,BG03,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG009,BG04,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG010,BG05,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG011,BG01,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG012,BG02,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG013,BG03,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG014,BG04,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG015,BG05,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG016,BG01,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG017,BG02,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG018,BG03,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG019,BG04,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG020,BG05,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG021,BG01,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG022,BG02,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG023,BG03,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG024,BG04,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG025,BG05,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource Storage Cluster
+ReservationBG026,BG01,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG027,BG02,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG028,BG03,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG029,BG04,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG030,BG05,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG031,BG01,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG032,BG02,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG033,BG03,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG034,BG04,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster
+ReservationBG035,BG05,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Resource Storage Cluster

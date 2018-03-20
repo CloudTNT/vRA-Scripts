@@ -1,0 +1,5 @@
+theName,theDescription,theSubnetMask,theGateway,thePrimaryDNS,theSecondaryDNS,theDNSSuffix,theDNSSearchSuffix,theRangeName,theRangeDesc,theStartIP,theEndIP
+Network Profile01,test01,255.255.255.0,10.60.1.1,10.60.1.100,10.60.1.101,lab.local,lab.local,External-Range01,Example01,10.60.1.2,10.60.1.10
+Network Profile02,test02,255.255.255.0,10.60.1.1,10.60.1.100,10.60.1.101,lab.local,lab.local,External-Range02,Example02,10.60.1.11,10.60.1.20
+Network Profile03,test03,255.255.255.0,10.60.1.1,10.60.1.100,10.60.1.101,lab.local,lab.local,External-Range03,Example03,10.60.1.21,10.60.1.30
+Network Profile04,test04,255.255.255.0,10.60.1.1,10.60.1.100,10.60.1.101,lab.local,lab.local,External-Range04,Example04,10.60.1.31,10.60.1.40

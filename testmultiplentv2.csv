@@ -1,0 +1,11 @@
+﻿theName,theTenant,theBusinessGroup,theResPolicy,theComputeResource,thePlatformType,theNetworkPath1,theNetworkProfile1,theNetworkPath2,theNetworkProfile2,theDataStorePath1,theDataStorePath2,theMemoryGB,theReservedSizeGB,thePriority
+ReservationBG41,Lab,BG01,EDGE,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local,2048,10,1
+ReservationBG42,Lab,BG02,EDGE,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local,2048,10,1
+ReservationBG43,Lab,BG03,EDGE,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local,2048,10,1
+ReservationBG44,Lab,BG04,EDGE,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local,2048,10,1
+ReservationBG45,Lab,BG05,EDGE,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local,2048,10,1
+ReservationBG61,Lab,BG01,EDGE,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster,2048,10,1
+ReservationBG62,Lab,BG02,EDGE,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster,2048,10,1
+ReservationBG63,Lab,BG03,EDGE,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster,2048,10,1
+ReservationBG64,Lab,BG04,EDGE,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster,2048,10,1
+ReservationBG65,Lab,BG05,EDGE,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster,2048,10,1

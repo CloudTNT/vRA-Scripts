@@ -1,0 +1,17 @@
+https://docs.vmware.com/en/vRealize-Automation/7.3/com.vmware.vra.programming.doc/GUID-C984C57E-F562-46DC-97AF-C9D467BB4047.html
+
+https://jsonformatter.curiousconcept.com/
+
+https://codebeautify.org/jsonviewer/eb6da8#
+
+{
+   "@type":"Tenant",
+   "id":"rainpole",
+   "urlName":"rainpole",
+   "name":"rainpoleTenant",
+   "description":"New Custom Tenant",
+   "contactEmail":"admin@vmware.com",
+   "defaultTenant":false
+}
+
+

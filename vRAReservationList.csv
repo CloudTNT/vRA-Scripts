@@ -1,0 +1,11 @@
+theName,theBusinessGroup,theComputeResource,thePlatformType,theNetworkPath1,theNetworkProfile1,theNetworkPath2,theNetworkProfile2,theDataStorePath1,theDataStorePath2
+ReservationBG41,BG01,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local
+ReservationBG42,BG02,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local
+ReservationBG43,BG03,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local
+ReservationBG44,BG04,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local
+ReservationBG45,BG05,Resource (https://vc.lab.local/sdk),vSphere (vCenter),vxw-dvs-64-virtualwire-3-sid-5002-vRA-VMs,vRA-VMs,Resource VMs,mgmt-nt,Resource Storage Cluster,ESXi6-Local
+ReservationBG61,BG01,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster
+ReservationBG62,BG02,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster
+ReservationBG63,BG03,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster
+ReservationBG64,BG04,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster
+ReservationBG65,BG05,Management (https://vc.lab.local/sdk),vSphere (vCenter),Management Network,mgmt-nt,Management VMs,vRA-VMs,Resource Storage Cluster,Management Storage Cluster
