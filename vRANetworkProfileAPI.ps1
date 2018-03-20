@@ -24,14 +24,13 @@ function popupBox ($msg, $num) {
 }
 
 #import xcel data
-#$vRAConfig_IPAMNWProfiles	= import-excel "c:\draft\IPAMNWProfiles.xlsx"
+$vRAConfig_IPAMNWProfiles	= import-excel "c:\draft\IPAMNWProfiles.xlsx"
 
 #Get vRA Server, Tenant, User, and Password
-$vRAServer          = getTenantInfo -msg 'Please enter your vRA server: i.e. vra-01.lab.local'
+$vRAServer         = getTenantInfo -msg 'Please enter your vRA server: i.e. vra-01.lab.local'
 $vRATenant			= getTenantInfo -msg 'Please enter the Tenant name: i.e. lab'
 $vRAUser 			= getTenantInfo -msg 'Please enter the FQDN of the user: i.e. vraadmin@lab.local'
 $TextPassword 		= getTenantInfo -msg 'Please enter in the Password you want to use for the local User Tenant account:'
-#$SecurePassword 	= ConvertTo-SecureString -String $TextPassword -AsPlainText -Force
 
 $header = @{ "Accept" = "application/json"; "Content-Type" = "application/json"  }
 
@@ -40,26 +39,34 @@ $body = @{
     password = "$TextPassword";
     tenant   = "$vRATenant"
 }
-
-$URI = "https://$vRAServer/identity/api/tokens"
+#API links
+$URI 				= "https://$vRAServer/identity/api/tokens"
+$networkprofile 	= "https://$vRAServer/iaas-proxy-provider/api/network/profiles"
  
 $token = restCall -URI $URI -Header $header -body (ConvertTo-Json $body)
 
 $header.Add("Authorization", "Bearer " + $token.id)
 
+$vRAConfig_IPAMNWProfiles | forEach-object {
+	$theName         = $_.theName
+	$theEndpointId  = $_.theEndpointId
+	$theAddrSpaceId = $_.theAddrSpaceId
+	$theDescription = $_.theDescription
+	$theExternalId  = $_.theExternaleId
+	$theRangeName   = $_.theRangeName
 
-$body = @"
+	$body = @"
 {
  "profileType" : "EXTERNAL",
  "id" : null,
  "@type" : "ExternalNetworkProfile",
- "name" : "Splatting Network Profile",
- "IPAMEndpointId" : "c37c7634-5a76-4b31-b76d-ab1452ef82db",
- "addressSpaceExternalId" : "default",
- "description" : "Created by Postman",
+ "name" : "$_.theName",
+ "IPAMEndpointId" : "$_.theEndpointId",
+ "addressSpaceExternalId" : "$_.theAddrSpaceId",
+ "description" : "$_.theDescription",
  "definedRanges" : [{
-	"externalId" : "network/default/10.254.0.0/27",
-	"name" : "10.254.0.0/27",
+	"externalId" : "$_.theExternalId",
+	"name" : "$_.theRangeName",
 	"description" : "Created by vRO package stub workflow",
 	"state" : "UNALLOCATED",
 	"beginIPv4Address" : null,
@@ -68,8 +75,5 @@ $body = @"
  ]
 }
 "@
-
-$networkprofile = "https://$vRAServer/iaas-proxy-provider/api/network/profiles"
-
 restCall -Uri $networkprofile -Header $header -Body $body
-
+}
