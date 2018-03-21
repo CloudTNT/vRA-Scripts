@@ -17,12 +17,6 @@ function getTenantInfo ($msg) {
 	[Microsoft.VisualBasic.Interaction]::InputBox($msg, $title)
 }
 
-#Function for the custom popup Box
-function popupBox ($msg, $num) {
-    $a = new-object -comobject wscript.shell
-    $a.popup($msg, 0,"World Wide Technology",$num)
-}
-
 #import xcel data
 $vRAConfig_IPAMNWProfiles	= import-excel "c:\draft\IPAMNWProfiles.xlsx"
 
