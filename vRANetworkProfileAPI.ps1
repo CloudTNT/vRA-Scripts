@@ -49,6 +49,7 @@ $header.Add("Authorization", "Bearer " + $token.id)
 
 $vRAConfig_IPAMNWProfiles | forEach-object {
 
+$body = @"
 {
  "profileType" : "EXTERNAL",
  "id" : null,
@@ -68,5 +69,9 @@ $vRAConfig_IPAMNWProfiles | forEach-object {
  ]
 }
 "@
+
 restCall -Uri $networkprofile -Header $header -Body $body
 }
+
+
+
