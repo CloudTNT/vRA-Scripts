@@ -48,25 +48,18 @@ $token = restCall -URI $URI -Header $header -body (ConvertTo-Json $body)
 $header.Add("Authorization", "Bearer " + $token.id)
 
 $vRAConfig_IPAMNWProfiles | forEach-object {
-	$theName         = $_.theName
-	$theEndpointId  = $_.theEndpointId
-	$theAddrSpaceId = $_.theAddrSpaceId
-	$theDescription = $_.theDescription
-	$theExternalId  = $_.theExternaleId
-	$theRangeName   = $_.theRangeName
 
-	$body = @"
 {
  "profileType" : "EXTERNAL",
  "id" : null,
  "@type" : "ExternalNetworkProfile",
- "name" : "$_.theName",
- "IPAMEndpointId" : "$_.theEndpointId",
- "addressSpaceExternalId" : "$_.theAddrSpaceId",
- "description" : "$_.theDescription",
+ "name" : "$($_.theName)",
+ "IPAMEndpointId" : "$($_.theEndpointId)",
+ "addressSpaceExternalId" : "$($_.theAddrSpaceId)",
+ "description" : "$($_.theDescription)",
  "definedRanges" : [{
-	"externalId" : "$_.theExternalId",
-	"name" : "$_.theRangeName",
+	"externalId" : "$($_.theExternalId)",
+	"name" : "$($_.theRangeName)",
 	"description" : "Created by vRO package stub workflow",
 	"state" : "UNALLOCATED",
 	"beginIPv4Address" : null,
