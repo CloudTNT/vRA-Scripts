@@ -1,0 +1,66 @@
+var str = "SQEWPHONO05V01";
+var arr = str.split('');
+
+var loc = arr[0] + arr[1] + arr[2];
+var OS = arr[3];
+var env = arr[4];
+var app = arr[5] + arr[6] + arr[7] + arr[8];
+var domain = arr[9] + arr[10];
+
+console.log(OS);
+console.log(env);
+console.log(app);
+
+switch (loc) {
+    case "SQE":
+        loc = "Deploys to new vCenter";
+        break;
+    case "CAS":
+        loc = "Deploys to new vCenter";
+        break;
+    case "VLS":
+        loc = "Deploys to new vCenter";
+        break;
+    case "BOT":
+        loc = "Boston";
+        break;
+    case "EST":
+        loc = "Estates";
+        break;
+    case "BHS":
+        loc = "BHS Who";
+        break;
+    case "ESO":
+        loc = "Moon";
+}
+
+switch (domain) {
+    case "01":
+        domain = "Puget.com";
+        break;
+    case "02":
+        domain = "testpse.loc";
+        break;
+    case "03":
+        domain = "pugetops.loc";
+        break;
+    case "04":
+        domain = "gasprod.loc";
+        break;
+    case "05":
+        domain = "gastest.loc";
+        break;
+    case "06":
+        domain = "psepublic.loc";
+        break;
+    case "07":
+        domain = "webtest.loc";
+        break;
+    case "08":
+        domain = "ecstestlab.loc";
+        break;
+    case "00":
+        domain = "workgroup";
+}
+console.log(loc);
+console.log(domain);
